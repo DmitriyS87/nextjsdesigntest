@@ -1,0 +1,32 @@
+.componentTableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tableControls {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.left {
+  max-width: 808px;
+}
+
+.right {
+}
+
+.list {
+  gap: 8px 4px;
+}
+
+.inputOverride {
+}
+
+.searchWide {
+  width: 317px;
+}
+
+.showMore {
+}

@@ -1,0 +1,108 @@
+:global(.encrease-specificity).button {
+  height: 32px;
+  padding: 4px 12px 4px 12px;
+  gap: 6px;
+  border-radius: 6px;
+  border: 0;
+  align-items: center;
+}
+
+:global(.encrease-specificity).button.default {
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(193, 199, 208, 0.02) 100%
+    );
+
+  box-shadow: 0px 0px 0px 1px rgba(18, 55, 105, 0.08),
+    0px 1px 2px 0px rgba(164, 172, 185, 0.24);
+  color: #36394a;
+}
+
+:global(.encrease-specificity).default:not(:disabled):not(
+    :global(.ant-btn-disabled)
+  ):hover,
+:global(.encrease-specificity).default:hover {
+  background: linear-gradient(0deg, #fafafa, #fafafa),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(193, 199, 208, 0.02) 100%
+    );
+  box-shadow: 0px 0px 0px 1px rgba(18, 55, 105, 0.08),
+    0px 1px 2px 0px rgba(164, 172, 185, 0.24);
+  color: #36394a;
+}
+
+:global(.encrease-specificity).link {
+}
+
+:global(.encrease-specificity).text {
+}
+
+.regular {
+}
+
+:global(.encrease-specificity).primary {
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(0deg, #4e75ff, #4e75ff),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(193, 199, 208, 0.02) 100%
+    );
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0px 0px 0px 1px rgba(70, 101, 210, 1),
+    0px 1px 2px 0px rgba(57, 89, 204, 0.5);
+}
+
+:global(.encrease-specificity).primary:not(:disabled):not(
+    :global(.ant-btn-disabled)
+  ):hover,
+:global(.encrease-specificity).primary:hover {
+  background: linear-gradient(0deg, #274fdc, #274fdc),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(193, 199, 208, 0.02) 100%
+    );
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  box-shadow: 0px 0px 0px 1px rgba(70, 101, 210, 1),
+    0px 1px 2px 0px rgba(57, 89, 204, 0.5);
+}
+
+:global(.encrease-specificity).dashed {
+}
+
+:global(.encrease-specificity).sizeDefault {
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 6px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+:global(.encrease-specificity).sizeSmall {
+  height: 32px;
+  padding: 4px 12px 4px 12px;
+  gap: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 20px;
+}

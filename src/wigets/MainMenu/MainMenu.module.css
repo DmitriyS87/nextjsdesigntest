@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1256px;
+    flex-grow: 1;
+    padding: 0 64px;
+}
+
+.left {
+    display: flex;
+    align-items:center;
+    gap: 50px;
+    flex-basis: 49%;
+}
+
+.right {
+    display: flex;
+    align-items:center;
+    gap: 24px;
+}
+
+.selectable {
+    display: flex;
+    align-items:center;
+    gap: 16px;
+}

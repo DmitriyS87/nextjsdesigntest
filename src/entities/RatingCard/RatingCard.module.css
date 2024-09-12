@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  height: 22px;
+  padding: 2px 4px 2px 4px;
+  gap: 2px;
+  border-radius: 6px;
+
+  background: rgba(255, 229, 0, 0.08);
+}

@@ -1,0 +1,17 @@
+.dotList {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 22px;
+}
+
+.dotList li {
+  position: relative;
+}
+
+.dotList li::before {
+  content: "•";
+  color: #6e7076;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}

@@ -1,0 +1,63 @@
+:global(.encrease-specificity).input {
+  border-radius: 8px;
+  border: 1px solid #e8ebf0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #36394a;
+}
+
+:global(.encrease-specificity).input :global(.ant-input) {
+  border-radius: 8px;
+  padding: 8px 6px 8px 12px;
+  border: 0;
+  height: 34px;
+}
+
+:global(.encrease-specificity).input :global(.ant-input-group-addon) {
+  background: transparent;
+  border-radius: 8px;
+  border: 0;
+}
+
+:global(.encrease-specificity).input :global(.ant-input)::placeholder {
+  color: #9e9da4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+:global(.encrease-specificity).removePR :global(.ant-input-group-addon) {
+  padding-right: 2px;
+}
+
+:global(.encrease-specificity).removePL :global(.ant-input-group-addon) {
+  padding-left: 2px;
+}
+
+:global(.encrease-specificity).switch {
+  background: #e8ebf0;
+}
+
+:global(.encrease-specificity).mr {
+  margin-right: 11px;
+}
+
+:global(.encrease-specificity).ml {
+  margin-left: 11px;
+}
+
+:global(.encrease-specificity).switch:hover:global(:not(.ant-switch-disabled)) {
+  background: #e8ebf0;
+}
+
+:global(.encrease-specificity).switch:global(.ant-switch-checked):hover:global(:not(.ant-switch-disabled)) {
+  background: #4e75ff;
+}
+
+:global(.encrease-specificity).leftIcon :global(.ant-input) {
+  padding-left: 6px;
+}

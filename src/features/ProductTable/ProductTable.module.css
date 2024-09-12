@@ -1,0 +1,109 @@
+:global(.encrease-specificity).table {
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+:global(.encrease-specificity).table table {
+  table-layout: auto;
+}
+
+:global(.encrease-specificity).table table thead tr th {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #6e7076;
+  background: #ffffff;
+  border: 0;
+}
+
+:global(.encrease-specificity).table table tbody tr td {
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #6e7076;
+  background: #ffffff;
+}
+
+:global(.encrease-specificity).table table tbody tr:last-child td {
+  border: 0;
+}
+
+:global(.encrease-specificity).table table tbody tr td:first-of-type {
+  padding: 8px 0;
+}
+
+:global(.encrease-specificity).table table thead tr th {
+  padding-bottom: 4px;
+}
+
+.tableCellContent {
+  flex-grow: 1;
+  min-height: 58px;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+:global(.encrease-specificity).table table thead tr th:first-of-type,
+:global(.encrease-specificity).table
+  table
+  tbody
+  tr
+  td:first-of-type
+  .tableCellContent {
+  max-width: 620px;
+}
+
+:global(.encrease-specificity).table
+  table
+  tbody
+  tr
+  td:first-of-type
+  .tableCellContent {
+  max-width: 620px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+:global(.encrease-specificity).table table tbody tr td .tableCellContent {
+  display: flex;
+  flex-grow: 1;
+  align-items: start;
+  padding: 8px 0;
+}
+
+:global(.encrease-specificity).table table tbody tr td:first-of-type {
+  white-space: break-spaces;
+}
+
+:where(.encrease-specificity).table
+  table
+  tbody
+  tr
+  th
+  :global(.ant-table-column-sorters):hover
+  :global(.ant-table-column-sorter) {
+  color: green;
+  /* color: #D4D7DD; */
+}
+
+:where(.encrease-specificity).table table tbody tr th :global(.ant-table-column-sorter) {
+  color: red;
+  /* color: #6e7076; */
+}
+
+.name {
+  display: block;
+  min-height: 43px;
+  line-height: 1.5;
+  letter-spacing: -0.08px;
+  word-spacing: -0.13px;
+}
+
+.amount {
+  color: #36394a;
+}

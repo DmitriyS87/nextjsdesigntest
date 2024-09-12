@@ -1,0 +1,79 @@
+:global(.encrease-specificity).search {
+  height: 32px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px 1px rgba(17, 38, 66, 0.08),
+    0px 1px 2px 0px rgba(153, 161, 176, 0.16);
+}
+
+/* padding: 6px 12px 6px 12px;
+#9E9DA4
+
+#6E7076
+box-shadow: 0px 0px 0px 1px rgba(17, 38, 66, 0.08),
+0px 1px 2px 0px rgba(153, 161, 176, 0.16);
+
+gap: 12px; 
+
+color: #36394A;
+box-shadow: 0px 0px 0px 1px rgba(17, 38, 66, 0.16),
+0px 1px 2px 0px rgba(153, 161, 176, 0.24);
+
+*/
+
+:global(.encrease-specificity).search :global(.ant-input) {
+  border-radius: 6px;
+  /* color: #9e9da4; */
+  /* ! фигма иначе рисует стили: стоит бордер и тени, но бордер лишний судя по pixelPerfect */
+  /* border: 1px solid #e8ebf0;
+  border-left: 0;
+  border-left-width: 0; */
+  border: 0;
+}
+
+:global(.encrease-specificity).search :global(.ant-input-group-addon) {
+  background: transparent;
+  border-radius: 6px;
+  /* ! фигма иначе рисует стили: стоит бордер и тени, но бордер лишний судя по pixelPerfect */
+  /* border: 1px solid #e8ebf0;
+  border-right: 0;
+  border-right-width: 0; */
+  border: 0;
+}
+
+:global(.encrease-specificity).search :global(.ant-input)::placeholder {
+  color: #9e9da4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+:global(.encrease-specificity).search :global(.ant-input-outlined):focus {
+  box-shadow: none;
+}
+
+:global(.encrease-specificity).search :global(.ant-input):hover::placeholder {
+  color: #6e7076;
+}
+
+:global(.encrease-specificity).search :global(.ant-input):active::placeholder {
+  color: #36394a;
+}
+
+:global(.encrease-specificity).search.activeShadow {
+  box-shadow: 0px 0px 0px 1px rgba(17, 38, 66, 0.16),
+    0px 1px 2px 0px rgba(153, 161, 176, 0.24);
+}
+
+/* :global(.encrease-specificity).search :global(.ant-input):active {
+  box-shadow: 0px 0px 0px 1px rgba(17, 38, 66, 0.16),
+  0px 1px 2px 0px rgba(153, 161, 176, 0.24);
+} */
+
+:global(.encrease-specificity).left :global(.ant-input-group-addon) {
+  padding-right: 2px;
+}
+
+:global(.encrease-specificity).right :global(.ant-input-group-addon) {
+  padding-left: 2px;
+}

@@ -1,0 +1,15 @@
+.paper {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 64px;
+  /* padding-bottom: 62px; */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 15px;
+
+  max-width: 1256px;
+  min-height: 70vh;
+}

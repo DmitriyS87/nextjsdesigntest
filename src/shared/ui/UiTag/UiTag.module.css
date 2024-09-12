@@ -1,0 +1,31 @@
+:global(.encrease-specificity).tag {
+  display: flex;
+  padding: 4px 12px;
+  border-radius: 6px;
+  height: 32px;
+  background: rgba(92, 128, 253, 0.08);
+  color: #5c80fd;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  border: 0;
+}
+
+:global(.encrease-specificity).tag:not(.checked):hover {
+  background: rgba(92, 128, 253, 0.2);
+}
+
+:global(.encrease-specificity).checked {
+  background: rgba(92, 128, 253, 1);
+  color: #fff;
+}
+
+:global(.encrease-specificity).checked:hover {
+  background: rgba(92, 128, 253, 1);
+  color: #fff;
+  opacity: 0.4;
+}

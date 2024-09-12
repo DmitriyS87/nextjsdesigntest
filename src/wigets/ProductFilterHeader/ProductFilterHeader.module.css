@@ -1,0 +1,35 @@
+.container {
+  border-bottom: 1px solid #e8ebf0;
+  padding-bottom: 24px;
+}
+
+.component {
+  max-width: 680px;
+}
+
+.header {
+  color: #36394a;
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.info {
+  color: #6e7076;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  margin-bottom: 25px;
+}
+
+.tagName {
+  letter-spacing: 0.08px;
+}
+
+.tagCount {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
