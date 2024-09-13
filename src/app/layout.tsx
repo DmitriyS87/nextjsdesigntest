@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 
 import AntdProvider from "shared/providers/ant/AntdProvider";
 import { ConfigProvider } from "antd";
-import "../../public/antd.min.css";
 import "./globals.css";
 
 const inter = Inter({
