@@ -21,7 +21,6 @@
     :global(.ant-button-disabled)
   ):hover {
   color: #36394a;
-  /* border: 1px solid rgba(212, 215, 221, 1) */
 }
 :global(.encrease-specificity).dropdownOpen:not(:disabled):not(
     :global(.ant-button-disabled)

@@ -21,14 +21,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  /*
-box-shadow: 0px 0px 0px 1px #4665D2;
-box-shadow: 0px 1px 2px 0px rgba(57, 89, 204, 0.502);
 
-background: linear-gradient(0deg, #4E75FF, #4E75FF),
-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193, 199, 208, 0.02) 100%);
-
-*/
   return (
     <html lang="en">
       <body className={inter.className}>

@@ -22,7 +22,6 @@ export const RatingCard = ({ value }: RatingCardProps) => {
     >
       <span>{printValue}</span>
       <StarIcon />
-      {/* <Image width="12" height="12" alt="star icon" src="/icons/starIcon.svg" style={{}} /> */}
     </div>
   );
 };
