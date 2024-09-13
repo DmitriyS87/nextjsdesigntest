@@ -42,6 +42,8 @@ linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193, 199, 208, 0.02) 100
             table={{className: 'encrease-specificity'}}
             divider={{className: 'encrease-specificity'}}
             dropdown={{className: 'encrease-specificity'}}
+            form={{className: 'encrease-specificity'}}
+            modal={{className: 'encrease-specificity'}}
             theme={{
               token: {
                 fontFamily: 'inherit',

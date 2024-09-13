@@ -9,6 +9,24 @@
   padding: 2px 4px 2px 4px;
   gap: 2px;
   border-radius: 6px;
+}
 
+.red {
+  color: #FF5C5C;
+  background: rgba(255, 92, 92, 0.08);
+}
+.orange {
+  color: #FF8E26;
+  background: rgba(255, 142, 38, 0.08);
+}
+.yellow {
+  fill: #E1B000;
+  color: #E1B000;
+  stroke: #E1B000;
   background: rgba(255, 229, 0, 0.08);
+}
+.green {
+  color: #1DB462;
+  fill: #1DB462;
+  background: rgba(29, 180, 98, 0.08);
 }

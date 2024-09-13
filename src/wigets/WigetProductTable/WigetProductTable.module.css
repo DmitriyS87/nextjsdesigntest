@@ -30,3 +30,17 @@
 
 .showMore {
 }
+
+.modal {
+  position: relative;
+}
+
+.modalClose {
+    position: absolute;
+    top: 0; /* Adjust to position it outside the modal body */
+    right: -65px; /* Adjust as per your requirement */
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border-radius: 8px;
+}

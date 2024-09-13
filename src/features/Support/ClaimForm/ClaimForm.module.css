@@ -1,0 +1,91 @@
+.header {
+  width: 251px;
+  height: 28px;
+  top: 24px;
+  left: 24px;
+  gap: 0px;
+  opacity: 0px;
+  color: #36394a;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+.form {
+  pading: 0;
+  padding-top: 24px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #6e7076;
+}
+
+.placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  background: #9e9da4;
+}
+
+:global(.ant-upload-wrapper).upload :global(.ant-upload-drag) {
+  border: 1px dashed #9e9da4;
+  background: transparent;
+  position: relative;
+}
+
+:global(.ant-upload-wrapper).upload
+  :global(.ant-upload-drag)
+  p:global(.ant-upload-drag-icon) {
+  margin-bottom: 6px;
+}
+
+.uploadHeader {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  background: #36394a;
+}
+
+.uploadDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  background: #6e7076;
+}
+
+.cancelButton {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+
+  color: #6e7076;
+}
+
+.form :global(.ant-form-item) {
+  margin-bottom: 20px;
+}
+
+.form :global(.ant-form-item):last-child {
+  margin-bottom: 0;
+}
+
+.form:global(.ant-form-vertical)
+  :global(.ant-form-item)
+  :global(.ant-form-item-label) {
+  padding-bottom: 5px;
+}
+
+.multiline:global(.ant-input) {
+  height: 110px;
+  margin-bottom: -8px;
+}

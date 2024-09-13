@@ -8,8 +8,7 @@ import { PriceCell } from "./components/PriceCell";
 import { EmojiString } from "./components/EmojiString";
 
 import cn from "classnames";
-import styles from './ProductTable.module.css';
-
+import styles from "./ProductTable.module.css";
 
 const amountParser = (val: DataType["amount"]) => {
   if (val === "∞") {
@@ -20,33 +19,6 @@ const amountParser = (val: DataType["amount"]) => {
   }
   return Number(val);
 };
-
-const columns: TableColumnsType<DataType> = [
-  {
-    title: "Описание",
-    dataIndex: "name",
-  },
-  {
-    title: "Продавец",
-    dataIndex: "vendor",
-  },
-  {
-    title: "Наличие",
-    dataIndex: "amount",
-    sorter: {
-      compare: (a, b) => amountParser(a.amount) - amountParser(b.amount),
-      multiple: 1,
-    },
-  },
-  {
-    title: "Цена",
-    dataIndex: "price",
-    sorter: {
-      compare: (a, b) => a.price.value - b.price.value,
-      multiple: 2,
-    },
-  },
-];
 
 const data: DataType[] = [
   {
@@ -90,7 +62,7 @@ const data: DataType[] = [
     name: "🤲Куплю и пройду рейд БУДДЫ - БУДДА РЕЙД - БУДА - место будды - Рейды буды - BUDDHA RAID - 🤲, Услуги",
     amount: "4556",
     price: {
-      value: 0.60,
+      value: 0.6,
       currency: "₽",
     },
     vendor: {
@@ -174,7 +146,7 @@ const data: DataType[] = [
     name: "🐘 Фрукт Мамонта 🐘 Мамонт/Mammoth 🐘, Предметы, Трейд",
     amount: "1502410",
     price: {
-      value: 0.60,
+      value: 0.6,
       currency: "₽",
     },
     vendor: {
@@ -256,7 +228,7 @@ const data: DataType[] = [
     name: "Вандо, Услуги",
     amount: "1502410",
     price: {
-      value: 0.60,
+      value: 0.6,
       currency: "₽",
     },
     vendor: {
@@ -301,6 +273,13 @@ const data: DataType[] = [
   },
 ];
 
+const printAmount = (value: string) => {
+  if (value.length < 4) {
+    return value;
+  }
+  return new Intl.NumberFormat().format(Number(value)).replace(/,/g, " ");
+};
+
 const onChange: TableProps<DataType>["onChange"] = (
   pagination,
   filters,
@@ -311,14 +290,32 @@ const onChange: TableProps<DataType>["onChange"] = (
 };
 
 export const ProductTable: React.FC = () => (
-  <Table dataSource={data} onChange={onChange} className={styles.table} pagination={false}>
-    <Column title="Описание" dataIndex="name" key="name" render={(data) => <div className={styles.tableCellContent}><EmojiString className={styles.name} data={data} /></div>} />
+  <Table
+    dataSource={data}
+    onChange={onChange}
+    className={styles.table}
+    pagination={false}
+  >
+    <Column
+      title="Описание"
+      dataIndex="name"
+      key="name"
+      render={(data) => (
+        <div className={styles.tableCellContent}>
+          <EmojiString className={styles.name} data={data} />
+        </div>
+      )}
+    />
     <Column
       width={230}
       title="Продавец"
       dataIndex="vendor"
       key="vendor"
-      render={(data) => <div className={styles.tableCellContent}><VendorCell {...data} /></div>}
+      render={(data) => (
+        <div className={styles.tableCellContent}>
+          <VendorCell {...data} />
+        </div>
+      )}
     />
     <Column
       width={128}
@@ -330,7 +327,13 @@ export const ProductTable: React.FC = () => (
         compare: (a, b) => amountParser(a.amount) - amountParser(b.amount),
         multiple: 1,
       }}
-      render={(data) => <div className={cn(styles.tableCellContent, styles.right, styles.amount)}>{data}</div>}
+      render={(data) => (
+        <div
+          className={cn(styles.tableCellContent, styles.right, styles.amount)}
+        >
+          {printAmount(data)}
+        </div>
+      )}
     />
     <Column
       width={128}
@@ -338,7 +341,11 @@ export const ProductTable: React.FC = () => (
       align="right"
       dataIndex="price"
       key="price"
-      render={(data) => <div className={cn(styles.tableCellContent, styles.right)}><PriceCell {...data} /></div>}
+      render={(data) => (
+        <div className={cn(styles.tableCellContent, styles.right)}>
+          <PriceCell {...data} />
+        </div>
+      )}
       sorter={{
         compare: (a, b) => a.price.value - b.price.value,
         multiple: 2,
