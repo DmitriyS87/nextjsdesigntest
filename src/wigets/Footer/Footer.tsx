@@ -1,3 +1,5 @@
+'use client'
+
 import { Logo } from "shared/entities/Logo/Logo";
 
 import cn from "classnames";

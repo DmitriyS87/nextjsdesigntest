@@ -1,3 +1,5 @@
+'use client'
+
 import { UiTag } from "shared/shared/ui/UiTag/UiTag";
 import styles from "./ProductFilterHeader.module.css";
 import { List } from "shared/shared/ui/List/List";

@@ -1,3 +1,5 @@
+'use client'
+
 import { Divider } from "antd";
 
 import styles from "./TradingInfo.module.css";

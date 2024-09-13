@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { UiDropdown } from "shared/shared/ui/UiDropdown/UiDropdown";
 import { List } from "shared/shared/ui/List/List";

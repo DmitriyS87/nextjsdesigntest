@@ -1,3 +1,5 @@
+'use client'
+
 import { Input, InputProps, Switch } from "antd";
 
 import cn from "classnames";

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import type { DropdownProps, MenuProps } from "antd";
 import { Dropdown } from "antd";

@@ -1,4 +1,6 @@
-import DOMPurify from "dompurify";
+'use client'
+
+// import DOMPurify from "dompurify";
 
 import cn from "classnames";
 import styles from "./EmojiString.module.css";
@@ -22,11 +24,11 @@ export const EmojiString = ({
   data: string;
   className?: string;
 }) => {
-  const { sanitize } = DOMPurify;
-  const sanitizeHtml = (html: string) => {
-    return sanitize(html);
-  };
-  const sanitizedHtml = sanitizeHtml(wrapEmojiHtml(data, cx(styles.emoji)));
+  // const { sanitize } = DOMPurify;
+  // const sanitizeHtml = (html: string) => {
+  //   return sanitize(html);
+  // };
+  const sanitizedHtml = wrapEmojiHtml(data, cx(styles.emoji));
   return (
     <span
       className={cn(styles.container, { [String(className)]: !!className })}

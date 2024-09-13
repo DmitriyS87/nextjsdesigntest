@@ -1,3 +1,5 @@
+'use client'
+
 import { SearchProps } from "antd/es/input/Search";
 import { Input } from "antd";
 
