@@ -1,8 +1,5 @@
-import { UiDropdown } from 'shared/shared/ui/UiDropdown/UiDropdown';
-import styles from './SupportDropdown.module.css';
+import { UiDropdown } from "shared/shared/ui/UiDropdown/UiDropdown";
 
 export const CurrencyDropdown = () => {
-    return (
-        <UiDropdown variant="link" placeholder="RUB" placement="bottom" />
-    )
-}
+  return <UiDropdown variant="link" placeholder="RUB" placement="bottom" />;
+};

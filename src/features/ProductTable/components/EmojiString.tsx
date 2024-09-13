@@ -1,6 +1,6 @@
-import DOMPurify from 'dompurify';
+import DOMPurify from "dompurify";
 
-import cn from 'classnames';
+import cn from "classnames";
 import styles from "./EmojiString.module.css";
 
 const cx = cn.bind(styles);
@@ -19,7 +19,18 @@ const sanitizeHtml = (html: string) => {
   return DOMPurify.sanitize(html);
 };
 
-export const EmojiString = ({data, className}: {data: string, className?: string}) => {
-  const sanitizedHtml = sanitizeHtml(wrapEmojiHtml(data, cx(styles.emoji)))
-  return <span className={cn(styles.container, {[String(className)]: !!className})} dangerouslySetInnerHTML={{ __html: sanitizedHtml }}></span>;
+export const EmojiString = ({
+  data,
+  className,
+}: {
+  data: string;
+  className?: string;
+}) => {
+  const sanitizedHtml = sanitizeHtml(wrapEmojiHtml(data, cx(styles.emoji)));
+  return (
+    <span
+      className={cn(styles.container, { [String(className)]: !!className })}
+      dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
+    ></span>
+  );
 };

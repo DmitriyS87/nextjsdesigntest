@@ -12,21 +12,21 @@
 }
 
 .red {
-  color: #FF5C5C;
+  color: #ff5c5c;
   background: rgba(255, 92, 92, 0.08);
 }
 .orange {
-  color: #FF8E26;
+  color: #ff8e26;
   background: rgba(255, 142, 38, 0.08);
 }
 .yellow {
-  fill: #E1B000;
-  color: #E1B000;
-  stroke: #E1B000;
+  fill: #e1b000;
+  color: #e1b000;
+  stroke: #e1b000;
   background: rgba(255, 229, 0, 0.08);
 }
 .green {
-  color: #1DB462;
-  fill: #1DB462;
+  color: #1db462;
+  fill: #1db462;
   background: rgba(29, 180, 98, 0.08);
 }

@@ -1,6 +1,6 @@
 import { Children, PropsWithChildren } from "react";
 
-import cn from 'classnames';
+import cn from "classnames";
 import styles from "./List.module.css";
 
 type ListProps<P extends { id: number | string }> = PropsWithChildren<{
@@ -16,9 +16,11 @@ export function List<P extends { id: number | string }>({
   className,
 }: ListProps<P>) {
   return (
-    <ul className={cn(styles.list, {
-      [String(className)]: !!className
-    })}>
+    <ul
+      className={cn(styles.list, {
+        [String(className)]: !!className,
+      })}
+    >
       {items.map((props) => (
         <li key={props.id} className={styles.listItem}>
           <ItemComponent {...props} />

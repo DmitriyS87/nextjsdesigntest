@@ -11,9 +11,7 @@ export const MainMenu = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         <Logo />
-        <UiSearchInput
-          placeholder="Поиск игр и приложений..."
-        />
+        <UiSearchInput placeholder="Поиск игр и приложений..." />
       </div>
       <div className={styles.right}>
         <div className={styles.selectable}>

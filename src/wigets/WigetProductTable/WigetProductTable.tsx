@@ -104,25 +104,27 @@ export const WigetProductTable = () => {
             onOk={closeModal}
             onCancel={closeModal}
             width={488}
-            // okButtonProps={{
-            //   className: buttonStyles.button,
-            //   block: true,
-            // }}
-            // cancelButtonProps={{
-            //   className: cn(buttonStyles.button, buttonStyles.default),
-            //   type: "default",
-            //   block: true,
-            // }}
-            // okText="Пожаловаться"
-            // cancelText="Мне нужна поддержка"
-            footer={(originNode, { OkBtn, CancelBtn }) => (
+            footer={() => (
               <div style={{ display: "flex", gap: "8px" }}>
-                <UiButton size="large" type="default" block onClick={closeModal}>Мне нужна поддержка</UiButton>
-                <UiButton size="large" type="primary" block onClick={closeModal}>Пожаловаться</UiButton>
+                <UiButton
+                  size="large"
+                  type="default"
+                  block
+                  onClick={closeModal}
+                >
+                  Мне нужна поддержка
+                </UiButton>
+                <UiButton
+                  size="large"
+                  type="primary"
+                  block
+                  onClick={closeModal}
+                >
+                  Пожаловаться
+                </UiButton>
               </div>
             )}
             styles={{
-              
               content: {
                 padding: "24px",
                 border: "1px solid #E8EBF0",
@@ -138,11 +140,8 @@ export const WigetProductTable = () => {
               <UiButton
                 shape="default"
                 icon={<CloseOutlined />}
-                className={cn(
-                  buttonStyles.button,
-                  buttonStyles.default
-                )}
-                style={{height: 48}}
+                className={cn(buttonStyles.button, buttonStyles.default)}
+                style={{ height: 48 }}
                 onClick={closeModal}
                 block
               />

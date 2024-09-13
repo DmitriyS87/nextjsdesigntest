@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import React from "react";
 import { Inter } from "next/font/google";
 
@@ -22,7 +21,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-/*
+  /*
 box-shadow: 0px 0px 0px 1px #4665D2;
 box-shadow: 0px 1px 2px 0px rgba(57, 89, 204, 0.502);
 
@@ -35,18 +34,18 @@ linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193, 199, 208, 0.02) 100
       <body className={inter.className}>
         <AntdProvider>
           <ConfigProvider
-            tag={{className: 'encrease-specificity'}}
-            input={{className: 'encrease-specificity'}}
-            button={{className: 'encrease-specificity'}}
-            switch={{className: 'encrease-specificity'}}
-            table={{className: 'encrease-specificity'}}
-            divider={{className: 'encrease-specificity'}}
-            dropdown={{className: 'encrease-specificity'}}
-            form={{className: 'encrease-specificity'}}
-            modal={{className: 'encrease-specificity'}}
+            tag={{ className: "encrease-specificity" }}
+            input={{ className: "encrease-specificity" }}
+            button={{ className: "encrease-specificity" }}
+            switch={{ className: "encrease-specificity" }}
+            table={{ className: "encrease-specificity" }}
+            divider={{ className: "encrease-specificity" }}
+            dropdown={{ className: "encrease-specificity" }}
+            form={{ className: "encrease-specificity" }}
+            modal={{ className: "encrease-specificity" }}
             theme={{
               token: {
-                fontFamily: 'inherit',
+                fontFamily: "inherit",
                 colorPrimary: "#4e75ff",
                 colorPrimaryHover: "#4665D2",
                 colorPrimaryText: "#ffffff",
@@ -58,7 +57,7 @@ linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193, 199, 208, 0.02) 100
                 boxShadowSecondary: "0px 16px 32px -12px rgba(14, 18, 27, 0.1)",
                 controlItemBgActiveHover: "blue",
                 controlItemBgHover: "#F7F7F7",
-                colorBgElevated: "#ffffff"
+                colorBgElevated: "#ffffff",
               },
               components: {
                 Table: {
@@ -68,8 +67,8 @@ linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193, 199, 208, 0.02) 100
                 },
                 Dropdown: {
                   paddingBlock: 14,
-                }
-              }
+                },
+              },
             }}
           >
             {children}

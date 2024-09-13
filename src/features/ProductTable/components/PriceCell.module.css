@@ -1,20 +1,20 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .price {
-    display: flex;
-    justify-content: flex-end;
-    gap: 4px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: right;
-    color: #36394A;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: right;
+  color: #36394a;
 }
 .icons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 4px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
 }

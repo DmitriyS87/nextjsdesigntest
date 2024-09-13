@@ -1,8 +1,7 @@
 import { Divider } from "antd";
 
-import cn from "classnames";
 import styles from "./TradingInfo.module.css";
-import dotListStyles from '../../shared/css/dotList.module.css'
+import dotListStyles from "../../shared/css/dotList.module.css";
 
 export const TradingInfo = () => {
   return (

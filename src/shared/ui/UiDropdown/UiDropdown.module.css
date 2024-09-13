@@ -17,24 +17,27 @@
 .dropdownOpen {
 }
 
-:global(.encrease-specificity).dropdownOpen:not(:disabled):not(:global(.ant-button-disabled)):hover {
+:global(.encrease-specificity).dropdownOpen:not(:disabled):not(
+    :global(.ant-button-disabled)
+  ):hover {
   color: #36394a;
   /* border: 1px solid rgba(212, 215, 221, 1) */
 }
-:global(.encrease-specificity).dropdownOpen:not(:disabled):not(:global(.ant-button-disabled)).active, 
-:global(.encrease-specificity).dropdownOpen:not(:disabled):not(:global(.ant-button-disabled)).active:hover {
-  color: #9E9DA4;
-  ;
+:global(.encrease-specificity).dropdownOpen:not(:disabled):not(
+    :global(.ant-button-disabled)
+  ).active,
+:global(.encrease-specificity).dropdownOpen:not(:disabled):not(
+    :global(.ant-button-disabled)
+  ).active:hover {
+  color: #9e9da4;
 }
 
 .active {
-  color: #9E9DA4;
+  color: #9e9da4;
 }
 
-:global(.encrease-specificity)
-  .dropdown
-  :global(.ant-dropdown-menu-item) {
-  color: #36394A;
+:global(.encrease-specificity) .dropdown :global(.ant-dropdown-menu-item) {
+  color: #36394a;
   padding: 8px;
   min-width: 160px;
   text-align: left;
@@ -42,11 +45,11 @@
 :global(.encrease-specificity):global(.ant-dropdown)
   .dropdown
   :global(.ant-dropdown-menu-item-selected):hover {
-    background-color: #D4D7DD;
-  }
+  background-color: #d4d7dd;
+}
 :global(.encrease-specificity)
   .dropdown
   :global(.ant-dropdown-menu-item-selected)
   :global(.ant-dropdown-menu-title-content) {
-  color: #36394A;
+  color: #36394a;
 }

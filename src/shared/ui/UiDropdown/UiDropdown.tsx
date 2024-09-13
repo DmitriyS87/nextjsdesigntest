@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { DownOutlined, UpOutlined } from "@ant-design/icons";
 import type { DropdownProps, MenuProps } from "antd";
-import { Dropdown, Space, Typography } from "antd";
+import { Dropdown } from "antd";
 import { DropdownButtonProps } from "antd/es/dropdown";
 import { UiButton } from "../UiButton/UiButton";
 import Image from "next/image";
@@ -87,9 +86,13 @@ export const UiDropdown: React.FC<Props> = ({
           </>
         </a>
       ) : variant === "button" ? (
-        <UiButton sizeVariant="small" style={{ gap: "9px" }} className={cn(styles.dropdownOpen, {
-          [styles.active]: open,
-        })}>
+        <UiButton
+          sizeVariant="small"
+          style={{ gap: "9px" }}
+          className={cn(styles.dropdownOpen, {
+            [styles.active]: open,
+          })}
+        >
           {placeholder}
           {getBtnArrowImg(open)}
         </UiButton>

@@ -1,27 +1,27 @@
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    padding: 12px 0;
-    height: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 12px 0;
+  height: 56px;
 }
 
 .content {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0 25px 0;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0 25px 0;
 }
 
 .footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    padding: 31px 0 32px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 31px 0 32px 0;
 }

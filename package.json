@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "checkTs": "tsc --noEmit",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md}'"
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.21.1",
@@ -17,6 +19,7 @@
     "classnames": "^2.5.1",
     "dompurify": "^3.1.6",
     "next": "14.2.9",
+    "prettier": "^3.3.3",
     "react": "^18",
     "react-dom": "^18"
   },

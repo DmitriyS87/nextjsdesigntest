@@ -1,8 +1,8 @@
 import React from "react";
 import { Table } from "antd";
-import type { TableColumnsType, TableProps } from "antd";
+import type { TableProps } from "antd";
 import Column from "antd/es/table/Column";
-import { DataType, Price } from "./ProductTable.types";
+import { DataType } from "./ProductTable.types";
 import { VendorCell } from "./components/VendorCell";
 import { PriceCell } from "./components/PriceCell";
 import { EmojiString } from "./components/EmojiString";
@@ -284,7 +284,7 @@ const onChange: TableProps<DataType>["onChange"] = (
   pagination,
   filters,
   sorter,
-  extra
+  extra,
 ) => {
   console.log("params", pagination, filters, sorter, extra);
 };

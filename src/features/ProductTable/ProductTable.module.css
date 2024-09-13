@@ -91,7 +91,12 @@
   /* color: #D4D7DD; */
 }
 
-:where(.encrease-specificity).table table tbody tr th :global(.ant-table-column-sorter) {
+:where(.encrease-specificity).table
+  table
+  tbody
+  tr
+  th
+  :global(.ant-table-column-sorter) {
   color: red;
   /* color: #6e7076; */
 }

@@ -11,6 +11,7 @@ export const ClaimForm = () => {
   const { TextArea } = Input;
   const { Item } = Form;
 
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   const normFile: (...args: any[]) => StoreValue = (e) => {
     console.log("Upload event:", e);
     if (Array.isArray(e)) {
@@ -34,7 +35,10 @@ export const ClaimForm = () => {
           name="claimReason"
           rules={[{ required: true, message: "Поле является обязательным" }]}
         >
-          <Select placeholder="Выберите причину жалобы" className={dropdownStyles.dropdownOpen}>
+          <Select
+            placeholder="Выберите причину жалобы"
+            className={dropdownStyles.dropdownOpen}
+          >
             <Option value="option1">Причина 1</Option>
             <Option value="option2">Причина 2</Option>
             <Option value="option3">Причина 3</Option>
@@ -45,7 +49,11 @@ export const ClaimForm = () => {
           name="claimDescription"
           rules={[{ required: true, message: "Поле является обязательным" }]}
         >
-          <TextArea className={styles.multiline} rows={4} placeholder="Введите ваш текст" />
+          <TextArea
+            className={styles.multiline}
+            rows={4}
+            placeholder="Введите ваш текст"
+          />
         </Item>
         <Item
           label={<span className={styles.label}>Доказательства</span>}
