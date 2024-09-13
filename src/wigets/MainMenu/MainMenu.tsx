@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Logo } from "shared/entities/Logo/Logo";
 import styles from "./MainMenu.module.css";

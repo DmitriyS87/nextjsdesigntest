@@ -48,7 +48,7 @@
 .modalFooter {
   display: flex;
   gap: 8px;
-  alignItems: center;
+  alignitems: center;
 }
 
 :global(.encrease-specificity).modal :global(.ant-modal-footer) {

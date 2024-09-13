@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Input, InputProps, Switch } from "antd";
 
