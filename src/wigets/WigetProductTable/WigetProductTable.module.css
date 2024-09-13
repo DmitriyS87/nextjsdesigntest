@@ -44,3 +44,13 @@
   background: transparent;
   border-radius: 8px;
 }
+
+.modalFooter {
+  display: flex;
+  gap: 8px;
+  alignItems: center;
+}
+
+:global(.encrease-specificity).modal :global(.ant-modal-footer) {
+  margin-top: 16px;
+}

@@ -105,7 +105,7 @@ export const WigetProductTable = () => {
             onCancel={closeModal}
             width={488}
             footer={() => (
-              <div style={{ display: "flex", gap: "8px" }}>
+              <div className={styles.modalFooter}>
                 <UiButton
                   size="large"
                   type="default"
