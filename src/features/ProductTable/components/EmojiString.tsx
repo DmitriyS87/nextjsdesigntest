@@ -15,10 +15,6 @@ const wrapEmojiHtml = (value: string, className: string) => {
   return wrapped;
 };
 
-const sanitizeHtml = (html: string) => {
-  return DOMPurify.sanitize(html);
-};
-
 export const EmojiString = ({
   data,
   className,
@@ -26,6 +22,10 @@ export const EmojiString = ({
   data: string;
   className?: string;
 }) => {
+  const { sanitize } = DOMPurify;
+  const sanitizeHtml = (html: string) => {
+    return sanitize(html);
+  };
   const sanitizedHtml = sanitizeHtml(wrapEmojiHtml(data, cx(styles.emoji)));
   return (
     <span
